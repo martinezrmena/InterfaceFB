@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterfaceFB.Views.Home"
+             Title="Home"
+             BackgroundColor="{StaticResource GrayMaterial}">
+
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Home" 
+                   Style="{StaticResource LabelMaterialWhite}"
+                   Grid.Column="0"/>
+            
+            <Image Source="{StaticResource ic_entrada}" 
+                   Grid.Column="1"
+                   Margin="5"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand"
+                  BackgroundColor="{StaticResource WhiteMaterial}"
+                  HeightRequest="60"
+                  Padding="0,10,0,10"
+                  Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                
+                <Label Text="New York"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalOptions="Start"
+                       Margin="5,5,0,0"
+                       VerticalOptions="End"
+                       Style="{StaticResource LabelTitle}"/>
+
+                <Label Text="Mostly Sunny"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       Margin="5,0,0,0"
+                       Style="{StaticResource LabelSubTitle}"/>
+
+                <Image Source="{StaticResource ic_clima}"
+                       Grid.Row="0"
+                       Grid.RowSpan="2"
+                       Grid.Column="1"
+                       HorizontalOptions="End"/>
+
+                <Label Text="17"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       Grid.RowSpan="2"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       FontSize="28"/>
+
+                <Label Text="°"
+                       Grid.Row="0"
+                       Grid.Column="3"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       FontSize="28"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

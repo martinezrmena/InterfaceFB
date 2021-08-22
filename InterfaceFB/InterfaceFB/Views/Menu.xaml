@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:views="clr-namespace:InterfaceFB.Views"
+       x:Class="InterfaceFB.Views.Menu"
+       BackgroundColor="White"
+       ForegroundColor="blue"
+       TitleColor="red"
+       DisabledColor="green"
+       UnselectedColor="#C5CAE9" >
+    
+    
+    <TabBar>
+        <ShellContent Title="Home"
+                     Icon="{StaticResource ic_home}">
+            <views:Home/>
+        </ShellContent>
+        <ShellContent Title="Search"
+                     Icon="{StaticResource ic_search}">
+            <views:Search/>
+        </ShellContent>
+        <ShellContent Title="Calendar"
+                     Icon="{StaticResource ic_calendar}">
+            <views:Calendar/>
+        </ShellContent>
+        <ShellContent Title="Profile"
+                     Icon="{StaticResource ic_profile}">
+            <views:Profile/>
+        </ShellContent>
+    </TabBar>
+</Shell>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterfaceFB.App">
+    <Application.Resources>
+
+        <Color x:Key="GrayMaterial">#e8eaf6</Color>
+        <Color x:Key="WhiteMaterial">#ffff</Color>
+        
+        <Style x:Key="LabelMaterialWhite" TargetType="{x:Type Label}">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18"/>
+            <!--<Setter Property="FontFamily" Value="{StaticResource CookieRegularFonts}" />-->
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="LabelTitle" TargetType="{x:Type Label}">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="LabelSubTitle" TargetType="{x:Type Label}">
+            <Setter Property="TextColor" Value="{StaticResource GrayMaterial}" />
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+
+        <FileImageSource x:Key="ic_home" File="home.png"/>
+        <FileImageSource x:Key="ic_search" File="search.png"/>
+        <FileImageSource x:Key="ic_calendar" File="calendar.png"/>
+        <FileImageSource x:Key="ic_profile" File="user.png"/>
+        <FileImageSource x:Key="ic_entrada" File="entrada.png"/>
+        <FileImageSource x:Key="ic_clima" File="dom.png"/>
+    </Application.Resources>
+</Application>
